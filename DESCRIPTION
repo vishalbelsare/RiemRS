@@ -6,6 +6,6 @@ Authors@R: person("Kisung", "You", role = c("aut", "cre"),email = "kyoustat@gmai
 Description: More about what it does (maybe more than one line)
 License: GPL-3
 Encoding: UTF-8
-Imports: Rcpp, Rdpack, RiemSphere, stats, utils
-LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, Rdpack, RiemBase, RiemBaseExt, RiemSphere, stats, utils
+LinkingTo: Rcpp, RcppArmadillo, RiemBase
 RoxygenNote: 6.1.1

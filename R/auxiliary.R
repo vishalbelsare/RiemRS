@@ -1,8 +1,7 @@
 ## Auxiliary Functions
 # (1) rs_checker   : either a list or 3d array
 # (2) rs_transform : let's make it a nicer way
-
-
+# (3) rs_bidist    : distance between two RS matrices
 
 
 # (1) rs_checker ----------------------------------------------------------
@@ -112,4 +111,24 @@ rs_trf_single <- function(themat){
   return(outmat)
 }
 
+
+# (3) rs_bidist  ----------------------------------------------------------
+#' @keywords internal
+#' @noRd
+rs_bidist <- function(mat1, mat2){
+  if (all(rowSums(mat1)==1)){
+    mat1 = sqrt(mat1)
+  } 
+  if (all(rowSums(mat2)==1)){
+    mat2 = sqrt(mat2)
+  }
+  N = nrow(mat1)
+  P = ncol(mat1)
+  
+  bivec = rep(0,N)
+  for (n in 1:N){
+    bivec[n] = ((base::acos(sum(as.vector(mat1[n,])*as.vector(mat2[n,]))))^2)
+  }
+  return(sqrt(sum(bivec)))
+}
 
