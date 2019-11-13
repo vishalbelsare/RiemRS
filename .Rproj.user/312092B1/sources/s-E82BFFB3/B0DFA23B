@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1573609218509.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4215356136",
+    "id" : "B0DFA23B",
+    "lastKnownWriteTime" : 1573618150,
+    "last_content_update" : 1573618150208,
+    "path" : "~/Desktop/RiemRS/R/package-RiemRS.R",
+    "project_path" : "R/package-RiemRS.R",
+    "properties" : {
+        "cursorPosition" : "9,36",
+        "scrollLine" : "0",
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
